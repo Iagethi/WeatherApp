@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/hourlyLayout">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp">
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/timeHourly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Min Temp: 05:05 AM"
+                        android:layout_marginBottom="8dp">
+
+                    </TextView>
+                    <TextView
+                        android:id="@+id/tempHourly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Max Temp: 20">
+
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <TextView
+                        android:id="@+id/timeHourly1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Min Temp: 05:05 AM"
+                        android:layout_marginBottom="8dp"
+                        >
+
+                    </TextView>
+                    <TextView
+
+                        android:id="@+id/tempHourly1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Max Temp: 20">
+
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <TextView
+                        android:id="@+id/timeHourly2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Min Temp: 05:05 AM"
+
+                        android:layout_marginBottom="8dp">
+
+                    </TextView>
+                    <TextView
+
+                        android:id="@+id/tempHourly2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Max Temp: 20">
+
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <TextView
+                        android:id="@+id/timeHourly3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Min Temp: 05:05 AM"
+                        android:layout_marginBottom="8dp">
+
+                    </TextView>
+                    <TextView
+
+                        android:id="@+id/tempHourly3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Max Temp: 20">
+
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <TextView
+                        android:id="@+id/timeHourly4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Min Temp: 05:05 AM"
+                        android:layout_marginBottom="8dp">
+
+                    </TextView>
+                    <TextView
+
+                        android:id="@+id/tempHourly4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Max Temp: 20">
+
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <TextView
+                        android:id="@+id/timeHourly5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Min Temp: 05:05 AM"
+                        android:layout_marginBottom="8dp">
+
+                    </TextView>
+                    <TextView
+
+                        android:id="@+id/tempHourly5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Max Temp: 20">
+
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <TextView
+                        android:id="@+id/timeHourly6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Min Temp: 05:05 AM"
+                        android:layout_marginBottom="8dp">
+
+                    </TextView>
+                    <TextView
+
+                        android:id="@+id/tempHourly6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Max Temp: 20">
+
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <TextView
+                        android:id="@+id/timeHourly7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Min Temp: 05:05 AM"
+                        android:layout_marginBottom="8dp">
+
+                    </TextView>
+                    <TextView
+
+                        android:id="@+id/tempHourly7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Max Temp: 20">
+
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <TextView
+                        android:id="@+id/timeHourly8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Min Temp: 05:05 AM"
+                        android:layout_marginBottom="8dp">
+
+                    </TextView>
+                    <TextView
+
+                        android:id="@+id/tempHourly8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Max Temp: 20">
+
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <TextView
+                        android:id="@+id/timeHourly9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Min Temp: 05:05 AM"
+                        android:layout_marginBottom="8dp">
+
+                    </TextView>
+                    <TextView
+
+                        android:id="@+id/tempHourly9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Max Temp: 20">
+
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <TextView
+                        android:id="@+id/timeHourly10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Min Temp: 05:05 AM"
+                        android:layout_marginBottom="8dp">
+
+                    </TextView>
+                    <TextView
+
+                        android:id="@+id/tempHourly10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Max Temp: 20">
+
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <TextView
+                        android:id="@+id/timeHourly11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Min Temp: 05:05 AM"
+                        android:layout_marginBottom="8dp">
+
+                    </TextView>
+                    <TextView
+
+                        android:id="@+id/tempHourly11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Max Temp: 20">
+
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <TextView
+                        android:id="@+id/timeHourly12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Min Temp: 05:05 AM"
+                        android:layout_marginBottom="8dp">
+
+                    </TextView>
+                    <TextView
+
+                        android:id="@+id/tempHourly12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Max Temp: 20">
+
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

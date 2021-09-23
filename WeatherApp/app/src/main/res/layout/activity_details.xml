@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCityName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHome" />
+    <TextView
+        android:id="@+id/dayTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="-20dp"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCityName"
+
+        />
+
+    <ImageView
+        android:id="@+id/weatherIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCityName" />
+
+    <TextView
+        android:id="@+id/tvTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text=""
+        android:textSize="40sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weatherIcon" />
+
+    <TextView
+        android:id="@+id/tvWeatherDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text=""
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTemperature"
+        android:paddingBottom="16dp"/>
+
+    <include
+        layout="@layout/hourly_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTemperature"
+        android:layout_marginTop="70dp"/>
+
+    <LinearLayout
+        android:id="@+id/dailyContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTemperature"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintTop_toTopOf="@+id/hourlyLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/dailyDate"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Sunday"
+                android:textSize="12dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dailyStatus"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Cloudy"
+                android:textSize="12dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dailyTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="15/15°C"
+                android:textSize="12dp">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/dailyDate1"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Sunday"
+                android:textSize="12dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dailyStatus1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Cloudy"
+                android:textSize="12dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dailyTemp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="15/15°C"
+                android:textSize="12dp">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/dailyDate2"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Sunday"
+                android:textSize="12dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dailyStatus2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Cloudy"
+                android:textSize="12dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dailyTemp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="15/15°C"
+                android:textSize="12dp">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/dailyDate3"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Sunday"
+                android:textSize="12dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dailyStatus3"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Cloudy"
+                android:textSize="12dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dailyTemp3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="15/15°C"
+                android:textSize="12dp">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/dailyDate4"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Sunday"
+                android:textSize="12dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dailyStatus4"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Cloudy"
+                android:textSize="12dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dailyTemp4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="15/15°C"
+                android:textSize="12dp">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/dailyDate5"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Sunday"
+                android:textSize="12dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dailyStatus5"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Cloudy"
+                android:textSize="12dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dailyTemp5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="15/15°C"
+                android:textSize="12dp">
+
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+        <include
+            layout="@layout/other_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/dailyContainer"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="15dp"
+            />
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>
