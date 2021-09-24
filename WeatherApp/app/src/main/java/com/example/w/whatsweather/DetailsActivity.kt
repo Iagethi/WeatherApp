@@ -227,6 +227,7 @@ class DetailsActivity : AppCompatActivity() {
         humidity.visibility = View.VISIBLE
         dailyContainer.visibility = View.VISIBLE
         hourlyLayout.visibility = View.VISIBLE
+        detailsContainer.visibility = View.VISIBLE
     }
 
     private fun setTvValuesForNullResponseResult() {
@@ -239,6 +240,8 @@ class DetailsActivity : AppCompatActivity() {
         humidity.visibility = View.GONE
         dailyContainer.visibility = View.GONE
         hourlyLayout.visibility = View.GONE
+        detailsContainer.visibility = View.GONE
+
 
     }
 }

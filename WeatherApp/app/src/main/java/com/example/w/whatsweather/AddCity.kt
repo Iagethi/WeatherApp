@@ -91,7 +91,7 @@ class AddCity : DialogFragment() {
                 currentIcon = weatherResult?.weather?.get(0)?.icon.toString()
                 currentTemp = weatherResult?.main?.temp.toString()
 
-                handleCityAdded()
+                //handleCityAdded()
 
             }
         })
